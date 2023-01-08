@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  container_docker:
+    build:
+      context: .
+    container_name: container_docker
+    image: container_docker:latest
+    volumes:
+      - /usr/share/zoneinfo/America/Sao_Paulo:/etc/localtime
+    ports:
+      - "3000:3000"      
+    networks:
+      - default
