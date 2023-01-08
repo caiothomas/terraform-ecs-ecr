@@ -1,11 +1,11 @@
 variable "aws_access_key" {
   type        = string
-  description = "be careful!! use env aws keys"
+  description = "use env aws keys"
 }
 
 variable "aws_secret_key" {
   type        = string
-  description = "be careful!! use env aws keys"
+  description = "use env aws keys"
 }
 
 variable "aws_region" {
