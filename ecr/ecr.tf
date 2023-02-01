@@ -9,7 +9,7 @@ resource "aws_ecr_repository_policy" "this" {
     "Version": "2008-10-17",
     "Statement": [
       {
-        "Sid": "adds full ecr access to the demo repository",
+        "Sid": "policy ecr access repository",
         "Effect": "Allow",
         "Principal": "*",
         "Action": [
@@ -35,7 +35,7 @@ resource "aws_ecr_lifecycle_policy" "this" {
   policy = jsonencode({
     rules = [{
       rulePriority = 1
-      description  = "keep last 10 images"
+      description  = "keep last 10 docker images"
       action = {
         type = "expire"
       }

@@ -13,7 +13,7 @@ variable "aws_region" {
 }
 
 variable "desired_capacity" {
-  description = "Desired number of running nodes"
+  description = "desired number of running nodes"
   default     = 0
 }
 
