@@ -35,7 +35,7 @@ resource "aws_ecr_lifecycle_policy" "this" {
   policy = jsonencode({
     rules = [{
       rulePriority = 1
-      description  = "keep last 10 docker images"
+      description  = "last 10 docker images"
       action = {
         type = "expire"
       }
