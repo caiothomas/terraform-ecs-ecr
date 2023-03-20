@@ -14,7 +14,7 @@ variable "aws_region" {
 
 variable "desired_capacity" {
   description = "desired number of running nodes"
-  default     = 0
+  default     = 3
 }
 
 variable "container_port" {
